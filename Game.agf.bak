@@ -1728,7 +1728,7 @@
             <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
             <Properties />
             <Interactions>
-              <Event Index="0" />
+              <Event Index="0">cRati_Look</Event>
               <Event Index="1" />
               <Event Index="2">cRati_Talk</Event>
               <Event Index="3" />
@@ -1850,12 +1850,81 @@ Rati: Si te la ofrezco yo no es ilegal
 option-off 2
 return
 @3
+Rati: Es muy fácil, tenemos acá a Marcos, que vende la mejor marihuana de la región. 
+Rati: Con hierbas finamente seleccionadas en las plantaciones más bellas del Paraguay. 
+Rati: Con un aroma suave, 
+Rati: un gusto equilibrado, 
+Rati: deberías probarlo, 
+Rati: acá nomás, en Ricardo Fort 645 PB A.
+run-script 4
+Ego: ¿Ud es policía o un agente de márketing del puntero ese?
+Rati: Un poco de esto, un poco de aquello. ¿Querés Marihuana o no?
+option-off 2
+option-off 3
+option-off 4
+option-off 5
+option-on 6
+option-on 7
 return
 @4
+Rati: El camión pasó un semáforo en rojo y atropelló a alguien
+option-on 8
+option-on 9
+option-on 10
+option-off 4
 return
 @5
 run-script 3
-stop]]></Script>
+stop
+@6
+Rati: Bueno, andá con el bueno de Marcos y decile “Frutos Gómez”
+Ego: ¿Frutos Gómez?
+Rati: Es la contraseña para que te atienda, y también mi nombre.
+Ego: Lindo nombre. Gracias por el consejo.
+option-on 3
+option-on 4
+option-off 6
+option-off 7
+option-on 5
+return
+@7
+Rati: ¿Respetuoso de la ley?
+Rati: jejejejeje
+Rati: ¡Uno encuentra a cada persona en la calle!
+option-on 3
+option-on 4
+option-off 6
+option-off 7
+option-on 5
+return
+@8
+Rati: No, pero está MUY enojado
+return
+@9
+Rati: Estamos viendo, porque si me da una coima creo que lo dejo ir.
+Ego: ¿Pero eso no es ilegal?
+Rati: ¿Hay tantas cosas ilegales?
+Rati: También dicen que es ideal que hagamos fiestas en la comisaría.
+Rati: ¡Hay que vivir!
+option-on 11
+option-on 12
+return
+@10
+Rati: No, no creo en los extraterrestres. 
+Rati: Sí creo en la Marihuana, 
+Rati: ¿te dije dónde conseguir la mejor marihuana del barrio?
+return
+@11
+Rati: Me gustaría no tener que pedir coimas, pero necesito la plata.
+option-off 11
+option-off 12
+return
+@12
+Rati: Me gustaría no tener que pedir coimas, pero necesito la plata.
+option-off 11
+option-off 12
+return
+]]></Script>
             <DialogOptions>
               <DialogOption>
                 <ID>1</ID>
@@ -1884,6 +1953,48 @@ stop]]></Script>
               <DialogOption>
                 <ID>5</ID>
                 <Text>Chau</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>6</ID>
+                <Text xml:space="preserve">¡Sí, la verdad es que quiero!</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>7</ID>
+                <Text xml:space="preserve">¡NO! ¡Yo soy un hombre respetuoso de la ley, las buenas costumbres, la biblia y los programas de actualidad política conservadores!</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>8</ID>
+                <Text xml:space="preserve">¿Y esa persona murió?</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>9</ID>
+                <Text xml:space="preserve">¿Y el tipo va a ir preso?</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>10</ID>
+                <Text xml:space="preserve">¿Ud. cree en los extraterrestres?</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>11</ID>
+                <Text xml:space="preserve">Bueno, dejar ir a alguien que atropelló a otra persona</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>12</ID>
+                <Text xml:space="preserve">Bueno, pero ud es un policía, debería velar por la legalidad</Text>
                 <Show>False</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -5620,24 +5731,24 @@ stop]]></Script>
     </AudioClips>
     <AudioClipTypes>
       <AudioClipType>
-        <TypeID>1</TypeID>
         <Name xml:space="preserve">Ambient Sound</Name>
+        <TypeID>1</TypeID>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <TypeID>2</TypeID>
         <Name>Music</Name>
+        <TypeID>2</TypeID>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>30</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <TypeID>3</TypeID>
         <Name>Sound</Name>
+        <TypeID>3</TypeID>
         <MaxChannels>0</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
