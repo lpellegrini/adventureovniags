@@ -1843,7 +1843,8 @@ option-on 2
 option-on 3
 option-on 4
 option-off 1
-option-on 5
+option-off 5
+option-on 13
 return
 @2
 Rati: Si te la ofrezco yo no es ilegal
@@ -1865,17 +1866,34 @@ option-off 4
 option-off 5
 option-on 6
 option-on 7
+option-on 13
 return
 @4
 Rati: El camión pasó un semáforo en rojo y atropelló a alguien
+option-off 2
+option-off 3
+option-on 5
 option-on 8
 option-on 9
 option-on 10
 option-off 4
+option-on 13
 return
 @5
-run-script 3
-stop
+option-on 2
+option-on 3
+option-on 4
+option-off 5
+option-off 6
+option-off 7
+option-off 8
+option-off 9
+option-on 13
+option-off 10
+option-off 11
+option-off 12
+Rati: Decime
+return
 @6
 Rati: Bueno, andá con el bueno de Marcos y decile “Frutos Gómez”
 Ego: ¿Frutos Gómez?
@@ -1883,9 +1901,14 @@ Rati: Es la contraseña para que te atienda, y también mi nombre.
 Ego: Lindo nombre. Gracias por el consejo.
 option-on 3
 option-on 4
+option-off 5
 option-off 6
 option-off 7
-option-on 5
+option-on 13
+option-off 10
+option-off 11
+option-off 12
+
 return
 @7
 Rati: ¿Respetuoso de la ley?
@@ -1895,7 +1918,12 @@ option-on 3
 option-on 4
 option-off 6
 option-off 7
-option-on 5
+option-off 8
+option-off 9
+option-off 10
+option-off 11
+option-off 12
+option-on 13
 return
 @8
 Rati: No, pero está MUY enojado
@@ -1906,8 +1934,19 @@ Ego: ¿Pero eso no es ilegal?
 Rati: ¿Hay tantas cosas ilegales?
 Rati: También dicen que es ideal que hagamos fiestas en la comisaría.
 Rati: ¡Hay que vivir!
+option-off 1
+option-off 2
+option-off 3
+option-off 4
+option-off 5
+option-off 6
+option-off 7
+option-off 8
+option-off 9
+option-off 10
 option-on 11
 option-on 12
+option-on 13
 return
 @10
 Rati: No, no creo en los extraterrestres. 
@@ -1918,12 +1957,17 @@ return
 Rati: Me gustaría no tener que pedir coimas, pero necesito la plata.
 option-off 11
 option-off 12
+option-on 13
 return
 @12
 Rati: Me gustaría no tener que pedir coimas, pero necesito la plata.
 option-off 11
 option-off 12
+option-on 13
 return
+@13
+run-script 3
+stop
 ]]></Script>
             <DialogOptions>
               <DialogOption>
@@ -1952,7 +1996,7 @@ return
               </DialogOption>
               <DialogOption>
                 <ID>5</ID>
-                <Text>Chau</Text>
+                <Text xml:space="preserve">Acerca de la marihuana...</Text>
                 <Show>False</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -1995,6 +2039,12 @@ return
               <DialogOption>
                 <ID>12</ID>
                 <Text xml:space="preserve">Bueno, pero ud es un policía, debería velar por la legalidad</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>13</ID>
+                <Text>Chau</Text>
                 <Show>False</Show>
                 <Say>True</Say>
               </DialogOption>
