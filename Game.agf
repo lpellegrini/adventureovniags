@@ -73,7 +73,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName>Prueba1024</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>2</AudioIndexer>
+      <AudioIndexer>3</AudioIndexer>
       <BuildTargets>Windows</BuildTargets>
       <RenderAtScreenResolution>UserDefined</RenderAtScreenResolution>
     </Settings>
@@ -752,6 +752,10 @@
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>2</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>3</Number>
             <Description IsNull="True" />
           </UnloadedRoom>
         </UnloadedRooms>
@@ -1627,9 +1631,9 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>-1</StartingRoom>
-            <StartX>160</StartX>
-            <StartY>120</StartY>
+            <StartingRoom>3</StartingRoom>
+            <StartX>491</StartX>
+            <StartY>514</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>4</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
@@ -5928,7 +5932,20 @@ stop
         <SubFolders>
           <AudioClipFolder Name="Music">
             <SubFolders />
-            <AudioClips />
+            <AudioClips>
+              <AudioClip>
+                <ScriptName>aWagner</ScriptName>
+                <SourceFileName>C:\Users\Pelle\Downloads\rvalkyri.mid</SourceFileName>
+                <Index>3</Index>
+                <Type>2</Type>
+                <BundlingType>InSeparateVOX</BundlingType>
+                <FileType>MIDI</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2018-12-04 21:04:47Z</FileLastModifiedDate>
+              </AudioClip>
+            </AudioClips>
             <AudioClipFolder>
               <DefaultVolume>100</DefaultVolume>
               <DefaultPriority>Inherit</DefaultPriority>
