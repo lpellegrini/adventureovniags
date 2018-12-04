@@ -67,8 +67,8 @@
       <Genre>Adventure</Genre>
       <Version>0.0.1.2</Version>
       <WindowsExperienceIndex>1</WindowsExperienceIndex>
-      <DeveloperName xml:space="preserve">Tom Vandepoele (aka "Electroshokker")</DeveloperName>
-      <DeveloperURL>http://www.t-vandepoele.be/rmi</DeveloperURL>
+      <DeveloperName xml:space="preserve">Pleyades SOFT</DeveloperName>
+      <DeveloperURL>www.none.com</DeveloperURL>
       <EnhancedSaveGames>False</EnhancedSaveGames>
       <SaveGameFileExtension />
       <SaveGameFolderName>Prueba1024</SaveGameFolderName>
@@ -80,7 +80,7 @@
     <RuntimeSetup>
       <GraphicsDriver>D3D9</GraphicsDriver>
       <Windowed>False</Windowed>
-      <FullscreenGameScaling>StretchToFit</FullscreenGameScaling>
+      <FullscreenGameScaling>ProportionalStretch</FullscreenGameScaling>
       <GameScaling>MaxInteger</GameScaling>
       <GameScalingMultiplier>1</GameScalingMultiplier>
       <GraphicsFilter>linear</GraphicsFilter>
