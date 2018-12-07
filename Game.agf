@@ -1654,7 +1654,7 @@
             <Interactions>
               <Event Index="0" />
               <Event Index="1" />
-              <Event Index="2" />
+              <Event Index="2">cChar1_Talk</Event>
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -1899,7 +1899,7 @@ option-off 12
 Rati: Decime
 return
 @6
-Rati: Bueno, andá con el bueno de Marcos y decile “Frutos Gómez”
+Rati: Bueno, andá con el bueno de Marcos y decile "Frutos Gómez"
 Ego: ¿Frutos Gómez?
 Rati: Es la contraseña para que te atienda, y también mi nombre.
 Ego: Lindo nombre. Gracias por el consejo.
@@ -2055,23 +2055,6 @@ stop
             </DialogOptions>
           </Dialog>
           <Dialog>
-            <ID>1</ID>
-            <Name>dHippieConv</Name>
-            <ShowTextParser>False</ShowTextParser>
-            <Script><![CDATA[// Dialog script file
-@S  // Dialog startup entry point
-run-script 2
-Ego: ¿Medias Alien?
-FanAlien: Si, un grupo de extraterrestres me visitó en sueños
-FanAlien: y me pidió que vendiera medias para ellos.
-FanAlien: Me dejan 75% de comisión.
-FanAlien: ¿Cuántas vas a llevar?
-Ego: No tengo dinero.
-Ego: Cuando tenga compro.
-stop]]></Script>
-            <DialogOptions />
-          </Dialog>
-          <Dialog>
             <ID>2</ID>
             <Name>dCamioConv</Name>
             <ShowTextParser>False</ShowTextParser>
@@ -2080,9 +2063,9 @@ stop]]></Script>
 return
 @1
 Camionero: Porque el policía ese dice que me pasé un semáforo en rojo y atropellé a alguien, 
-Camionero: pero no atropellé a nadie… 
+Camionero: pero no atropellé a nadie...
 Camionero: y el semáforo... 
-Camionero: no está… Alguien lo sacó 
+Camionero: no está... Alguien lo sacó 
 Camionero: ¿Cómo me puedo pasar un semáforo en rojo que no existe?
 option-on 2
 option-on 3
@@ -2102,9 +2085,10 @@ option-off 4
 return
 @5
 Camionero: Tengo varios. 
-Camionero: Uno es “Para enamorar a Mussolini, canciones románticas del fascismo italiano”, 
-Camionero: otro “A mover los esqueletos: lo mejor del carnaval Nazi de 1938” 
-Camionero: y por último “Mejores Hits anticomunistas de 1968”.
+Camionero: Uno es "Para enamorar a Mussolini, canciones románticas del fascismo italiano", 
+Camionero: otro "A mover los esqueletos: lo mejor del carnaval Nazi de 1938" 
+Camionero: y por último "Mejores Hits anticomunistas de 1968".
+run-script 5
 Ego: Gracias! Chau
 stop
 ]]></Script>
@@ -2136,6 +2120,178 @@ stop
               <DialogOption>
                 <ID>5</ID>
                 <Text xml:space="preserve">¿Qué discos traes?</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>1</ID>
+            <Name>dHippieConv</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+run-script 2
+Ego: ¿Medias Alien?
+FanAlien: Si, un grupo de extraterrestres me visitó en sueños
+FanAlien: y me pidió que vendiera medias para ellos.
+FanAlien: Me dejan 75% de comisión.
+FanAlien: ¿Cuántas vas a llevar?
+Ego: No tengo dinero.
+Ego: Cuando tenga compro.
+stop]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>3</ID>
+            <Name>dCesarConv</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+@1
+Char1: ¡Bienvenido a César Po! ¡Una disquería SARPADA!
+Ego: Buen día
+Char1: ¿Entendió lo de "Sarpada"?
+Char1: Es porque soy CESAR PO,
+Char1: es un complejo juego de palabras.
+option-off 1
+option-on 2
+option-on 3
+option-on 4
+return
+@2
+Char1: ¿Qué estás buscando?
+run-script 6
+option-off 2
+option-off 3
+option-off 4
+option-on 7
+option-on8
+return
+@3
+Char1: ¿Qué estás buscando?
+run-script 6
+option-off 2
+option-off 3
+option-off 4
+option-on 7
+option-on 8
+return
+@4
+Char1: Es que César Po es mi nombre.
+Char1: pero también puede significar "Se sarpó"
+Char1: Soy un hábil constructor de juegos de palabras.
+option-off 1
+option-off 2
+option-off 3
+option-off 4
+option-on 5
+option-on 6
+return
+@5
+return
+@6
+option-off 1
+option-off 2
+option-off 3
+option-off 4
+option-off 5
+option-off 6
+Ego: Estoy buscando un disco
+Char1: ¿Qué estás buscando?
+run-script 6
+option-on 7
+option-on 8
+return
+@7
+Char1: No lo tengo
+Char1: ¿Buscás alguna otra cosa?
+return
+@8
+Char1: No lo tengo
+Char1: ¿Buscás alguna otra cosa?
+return
+@9
+Char1: Todavía no me llegaron. 
+Char1: Estoy esperando al distribuidor, no sé por qué no llegó. 
+Char1: Es un irresponsable, la gente quiere su música
+stop
+@10
+Char1: Todavía no me llegaron. 
+Char1: Estoy esperando al distribuidor, no sé por qué no llegó. 
+Char1: Es un irresponsable, la gente quiere su música
+stop
+@11
+Char1: Todavía no me llegaron. 
+Char1: Estoy esperando al distribuidor, no sé por qué no llegó. 
+Char1: Es un irresponsable, la gente quiere su música
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text />
+                <Show>True</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">Sí, creo que lo entendí, estoy buscando un disco</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">Sí, no soy IDIOTA, estoy buscando un disco</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text xml:space="preserve">No entendí, expliqueme de nuevo</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text xml:space="preserve">¿Me cuenta otro?</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>6</ID>
+                <Text xml:space="preserve">Ya enendí, no es necesario seguir</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>7</ID>
+                <Text xml:space="preserve">Estoy buscando el de "Si bailamos Cachete con cachete, pechito con pechito y ombligo con ombligo".</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>8</ID>
+                <Text xml:space="preserve">Estoy buscando uno de la banda de Death Metal "Vómito de Zombieempalador"</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>9</ID>
+                <Text xml:space="preserve">Estoy buscando "Mejores Hits anticomunistas de 1968"</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>10</ID>
+                <Text xml:space="preserve">Estoy buscando "¡A mover los esqueletos!"</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>11</ID>
+                <Text xml:space="preserve">Estoy buscando "Para enamorar a Mussolini"</Text>
                 <Show>False</Show>
                 <Say>True</Say>
               </DialogOption>
