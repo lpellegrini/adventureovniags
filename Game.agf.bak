@@ -6090,8 +6090,8 @@ stop
             <SubFolders />
             <AudioClips>
               <AudioClip>
-                <ScriptName>aWagner</ScriptName>
                 <SourceFileName>C:\Users\Pelle\Downloads\rvalkyri.mid</SourceFileName>
+                <ScriptName>aWagner</ScriptName>
                 <Index>3</Index>
                 <Type>2</Type>
                 <BundlingType>InSeparateVOX</BundlingType>
@@ -6159,8 +6159,8 @@ stop
     </AudioClips>
     <AudioClipTypes>
       <AudioClipType>
-        <Name xml:space="preserve">Ambient Sound</Name>
         <TypeID>1</TypeID>
+        <Name xml:space="preserve">Ambient Sound</Name>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
