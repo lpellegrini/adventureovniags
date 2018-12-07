@@ -1625,7 +1625,7 @@
           <Character>
             <ID>1</ID>
             <ScriptName>cChar1</ScriptName>
-            <RealName xml:space="preserve">New character</RealName>
+            <RealName>Cesar</RealName>
             <NormalView>7</NormalView>
             <SpeechView>8</SpeechView>
             <IdleView>0</IdleView>
@@ -2152,7 +2152,7 @@ return
 @1
 Char1: ¡Bienvenido a César Po! ¡Una disquería SARPADA!
 Ego: Buen día
-Char1: ¿Entendió lo de "Sarpada"?
+Char1: ¿Entendiste lo de "Sarpada"?
 Char1: Es porque soy CESAR PO,
 Char1: es un complejo juego de palabras.
 option-off 1
@@ -2167,7 +2167,9 @@ option-off 2
 option-off 3
 option-off 4
 option-on 7
-option-on8
+option-on 8
+option-off 12
+option-on 13
 return
 @3
 Char1: ¿Qué estás buscando?
@@ -2177,10 +2179,12 @@ option-off 3
 option-off 4
 option-on 7
 option-on 8
+option-off 12
+option-on 13
 return
 @4
 Char1: Es que César Po es mi nombre.
-Char1: pero también puede significar "Se sarpó"
+Char1: Pero también puede significar "Se sarpó"
 Char1: Soy un hábil constructor de juegos de palabras.
 option-off 1
 option-off 2
@@ -2203,14 +2207,18 @@ Char1: ¿Qué estás buscando?
 run-script 6
 option-on 7
 option-on 8
+option-off 12
+option-on 13
 return
 @7
 Char1: No lo tengo
 Char1: ¿Buscás alguna otra cosa?
+option-off 7
 return
 @8
 Char1: No lo tengo
 Char1: ¿Buscás alguna otra cosa?
+option-off 8
 return
 @9
 Char1: Todavía no me llegaron. 
@@ -2227,6 +2235,25 @@ Char1: Todavía no me llegaron.
 Char1: Estoy esperando al distribuidor, no sé por qué no llegó. 
 Char1: Es un irresponsable, la gente quiere su música
 stop
+@12
+Char1: ¿Qué estás buscando?
+run-script 6
+option-off 2
+option-off 3
+option-off 4
+option-on 7
+option-on 8
+option-on 13
+option-off 12
+option-off 9
+option-off 10
+option-off 11
+return
+@13
+Char1: De nada
+option-on 12
+stop
+
 ]]></Script>
             <DialogOptions>
               <DialogOption>
@@ -2267,7 +2294,7 @@ stop
               </DialogOption>
               <DialogOption>
                 <ID>7</ID>
-                <Text xml:space="preserve">Estoy buscando el de "Si bailamos Cachete con cachete, pechito con pechito y ombligo con ombligo".</Text>
+                <Text xml:space="preserve">Estoy buscando el de "Si bailamos cachete con cachete, pechito con pechito y ombligo con ombligo".</Text>
                 <Show>False</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -2292,6 +2319,18 @@ stop
               <DialogOption>
                 <ID>11</ID>
                 <Text xml:space="preserve">Estoy buscando "Para enamorar a Mussolini"</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>12</ID>
+                <Text xml:space="preserve">Estoy buscando un disco.</Text>
+                <Show>False</Show>
+                <Say>True</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>13</ID>
+                <Text xml:space="preserve">No importa, gracias.</Text>
                 <Show>False</Show>
                 <Say>True</Say>
               </DialogOption>
@@ -3509,9 +3548,9 @@ stop
                   <SpriteFolder Name="Walk">
                     <SubFolders />
                     <Sprites>
-                      <Sprite Slot="123" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                      <Sprite Slot="123" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
                         <Source>
-                          <FileName>C:\Users\Pelle\Desktop\Aventura\sprites\chars\oldman\stand.png</FileName>
+                          <FileName>C:\Users\Pelle\Pictures\Saved Pictures\Jovie\stand.bmp</FileName>
                         </Source>
                       </Sprite>
                       <Sprite Slot="124" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
@@ -3524,24 +3563,24 @@ stop
                   <SpriteFolder Name="Talk">
                     <SubFolders />
                     <Sprites>
-                      <Sprite Slot="125" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                      <Sprite Slot="125" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
                         <Source>
-                          <FileName>C:\Users\Pelle\Desktop\Aventura\sprites\chars\oldman\talk\fr1.png</FileName>
+                          <FileName>C:\Users\Pelle\Pictures\Saved Pictures\Jovie\1.bmp</FileName>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="126" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                      <Sprite Slot="126" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
                         <Source>
-                          <FileName>C:\Users\Pelle\Desktop\Aventura\sprites\chars\oldman\talk\fr2.png</FileName>
+                          <FileName>C:\Users\Pelle\Pictures\Saved Pictures\Jovie\2.bmp</FileName>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="127" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                      <Sprite Slot="127" Width="24" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
                         <Source>
-                          <FileName>C:\Users\Pelle\Desktop\Aventura\sprites\chars\oldman\talk\fr3.png</FileName>
+                          <FileName>C:\Users\Pelle\Pictures\Saved Pictures\Jovie\3.bmp</FileName>
                         </Source>
                       </Sprite>
-                      <Sprite Slot="128" Width="28" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                      <Sprite Slot="128" Width="28" Height="70" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
                         <Source>
-                          <FileName>C:\Users\Pelle\Desktop\Aventura\sprites\chars\oldman\talk\fr4.png</FileName>
+                          <FileName>C:\Users\Pelle\Pictures\Saved Pictures\Jovie\4.bmp</FileName>
                         </Source>
                       </Sprite>
                     </Sprites>
@@ -4231,7 +4270,7 @@ stop
                     <Frames>
                       <ViewFrame>
                         <ID>0</ID>
-                        <Image>124</Image>
+                        <Image>123</Image>
                         <Flipped>True</Flipped>
                         <Delay>0</Delay>
                         <Sound>0</Sound>
@@ -4244,7 +4283,7 @@ stop
                     <Frames>
                       <ViewFrame>
                         <ID>0</ID>
-                        <Image>124</Image>
+                        <Image>123</Image>
                         <Flipped>False</Flipped>
                         <Delay>0</Delay>
                         <Sound>0</Sound>
@@ -4322,6 +4361,34 @@ stop
                         <Delay>0</Delay>
                         <Sound>0</Sound>
                       </ViewFrame>
+                      <ViewFrame>
+                        <ID>1</ID>
+                        <Image>125</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>2</ID>
+                        <Image>126</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>3</ID>
+                        <Image>127</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>4</ID>
+                        <Image>128</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
                     </Frames>
                   </Loop>
                   <Loop>
@@ -4335,6 +4402,34 @@ stop
                         <Delay>0</Delay>
                         <Sound>0</Sound>
                       </ViewFrame>
+                      <ViewFrame>
+                        <ID>1</ID>
+                        <Image>125</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>2</ID>
+                        <Image>126</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>3</ID>
+                        <Image>127</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>4</ID>
+                        <Image>128</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
                     </Frames>
                   </Loop>
                   <Loop>
@@ -4344,6 +4439,34 @@ stop
                       <ViewFrame>
                         <ID>0</ID>
                         <Image>123</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>1</ID>
+                        <Image>125</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>2</ID>
+                        <Image>126</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>3</ID>
+                        <Image>127</Image>
+                        <Flipped>False</Flipped>
+                        <Delay>0</Delay>
+                        <Sound>0</Sound>
+                      </ViewFrame>
+                      <ViewFrame>
+                        <ID>4</ID>
+                        <Image>128</Image>
                         <Flipped>False</Flipped>
                         <Delay>0</Delay>
                         <Sound>0</Sound>
@@ -6090,8 +6213,8 @@ stop
             <SubFolders />
             <AudioClips>
               <AudioClip>
-                <SourceFileName>C:\Users\Pelle\Downloads\rvalkyri.mid</SourceFileName>
                 <ScriptName>aWagner</ScriptName>
+                <SourceFileName>C:\Users\Pelle\Downloads\rvalkyri.mid</SourceFileName>
                 <Index>3</Index>
                 <Type>2</Type>
                 <BundlingType>InSeparateVOX</BundlingType>
@@ -6159,8 +6282,8 @@ stop
     </AudioClips>
     <AudioClipTypes>
       <AudioClipType>
-        <TypeID>1</TypeID>
         <Name xml:space="preserve">Ambient Sound</Name>
+        <TypeID>1</TypeID>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
