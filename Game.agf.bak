@@ -3314,9 +3314,9 @@ stop
                   <FileName>C:\Users\Pelle\Pictures\Char\parallax1056.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="97" Width="1877" Height="1056" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+              <Sprite Slot="97" Width="2086" Height="1056" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
                 <Source>
-                  <FileName>C:\Users\Pelle\Pictures\Char\fondo.gif</FileName>
+                  <FileName>C:\Users\Pelle\Pictures\germipandarojo\fond.png</FileName>
                 </Source>
               </Sprite>
               <Sprite Slot="153" Width="1296" Height="729" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
@@ -3324,9 +3324,9 @@ stop
                   <FileName>C:\Users\Pelle\Pictures\Char\20181119_100725.gif</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="154" Width="1877" Height="1056" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+              <Sprite Slot="154" Width="2086" Height="1056" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
                 <Source>
-                  <FileName>C:\Users\Pelle\Pictures\Char\fondo2trans.gif</FileName>
+                  <FileName>C:\Users\Pelle\Pictures\germipandarojo\fond2.png</FileName>
                 </Source>
               </Sprite>
             </Sprites>
