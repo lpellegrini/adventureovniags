@@ -21,7 +21,7 @@
       <PixelPerfect>True</PixelPerfect>
       <WhenInterfaceDisabled>GreyOut</WhenInterfaceDisabled>
       <GUIAlphaStyle>MultiplyTranslucenceSrcBlend</GUIAlphaStyle>
-      <SpriteAlphaStyle>Improved</SpriteAlphaStyle>
+      <SpriteAlphaStyle>Classic</SpriteAlphaStyle>
       <RunGameLoopsWhileDialogOptionsDisplayed>False</RunGameLoopsWhileDialogOptionsDisplayed>
       <InventoryHotspotMarkerStyle>None</InventoryHotspotMarkerStyle>
       <InventoryHotspotMarkerSprite>0</InventoryHotspotMarkerSprite>
@@ -56,7 +56,7 @@
       <TextWindowGUI>0</TextWindowGUI>
       <AlwaysDisplayTextAsSpeech>False</AlwaysDisplayTextAsSpeech>
       <FontsForHiRes>False</FontsForHiRes>
-      <AntiAliasFonts>False</AntiAliasFonts>
+      <AntiAliasFonts>True</AntiAliasFonts>
       <ThoughtGUI>0</ThoughtGUI>
       <BackwardsText>False</BackwardsText>
       <MaximumScore>0</MaximumScore>
@@ -83,7 +83,7 @@
       <FullscreenGameScaling>ProportionalStretch</FullscreenGameScaling>
       <GameScaling>MaxInteger</GameScaling>
       <GameScalingMultiplier>1</GameScalingMultiplier>
-      <GraphicsFilter>linear</GraphicsFilter>
+      <GraphicsFilter>stdscale</GraphicsFilter>
       <VSync>False</VSync>
       <AAScaledSprites>True</AAScaledSprites>
       <DowngradeTo16bit>False</DowngradeTo16bit>
@@ -756,6 +756,10 @@
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>3</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>4</Number>
             <Description IsNull="True" />
           </UnloadedRoom>
         </UnloadedRooms>
@@ -1592,8 +1596,8 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>1</StartingRoom>
-            <StartX>647</StartX>
-            <StartY>1015</StartY>
+            <StartX>281</StartX>
+            <StartY>1019</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>3</MovementSpeedX>
@@ -1632,8 +1636,8 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>3</StartingRoom>
-            <StartX>483</StartX>
-            <StartY>474</StartY>
+            <StartX>854</StartX>
+            <StartY>385</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>4</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
@@ -1712,8 +1716,8 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>2</StartingRoom>
-            <StartX>1100</StartX>
-            <StartY>982</StartY>
+            <StartX>1048</StartX>
+            <StartY>979</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
@@ -1752,8 +1756,8 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>2</StartingRoom>
-            <StartX>1225</StartX>
-            <StartY>1018</StartY>
+            <StartX>1191</StartX>
+            <StartY>1017</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
@@ -1792,8 +1796,8 @@
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
             <StartingRoom>1</StartingRoom>
-            <StartX>428</StartX>
-            <StartY>946</StartY>
+            <StartX>649</StartX>
+            <StartY>960</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
             <MovementSpeed>3</MovementSpeed>
             <MovementSpeedX>0</MovementSpeedX>
@@ -3327,6 +3331,11 @@ stop
               <Sprite Slot="154" Width="2086" Height="1056" ColorDepth="32" Resolution="HighRes" AlphaChannel="True">
                 <Source>
                   <FileName>C:\Users\Pelle\Pictures\germipandarojo\fond2.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="159" Width="2086" Height="1056" ColorDepth="32" Resolution="HighRes" AlphaChannel="False">
+                <Source>
+                  <FileName>C:\Users\Pelle\Pictures\germipandarojo\calle13post.png</FileName>
                 </Source>
               </Sprite>
             </Sprites>
@@ -6213,8 +6222,8 @@ stop
             <SubFolders />
             <AudioClips>
               <AudioClip>
-                <ScriptName>aWagner</ScriptName>
                 <SourceFileName>C:\Users\Pelle\Downloads\rvalkyri.mid</SourceFileName>
+                <ScriptName>aWagner</ScriptName>
                 <Index>3</Index>
                 <Type>2</Type>
                 <BundlingType>InSeparateVOX</BundlingType>
@@ -6237,8 +6246,8 @@ stop
             <SubFolders />
             <AudioClips>
               <AudioClip>
-                <ScriptName>aAbrirpuerta</ScriptName>
                 <SourceFileName>C:\Users\Pelle\Desktop\Aventura\Audio\SFX\abrirpuerta.ogg</SourceFileName>
+                <ScriptName>aAbrirpuerta</ScriptName>
                 <Index>1</Index>
                 <Type>3</Type>
                 <BundlingType>InGameEXE</BundlingType>
@@ -6249,8 +6258,8 @@ stop
                 <FileLastModifiedDate>2018-10-11 17:54:47Z</FileLastModifiedDate>
               </AudioClip>
               <AudioClip>
-                <ScriptName>aCerrarpuerta</ScriptName>
                 <SourceFileName>C:\Users\Pelle\Desktop\Aventura\Audio\SFX\cerrarpuerta.ogg</SourceFileName>
+                <ScriptName>aCerrarpuerta</ScriptName>
                 <Index>2</Index>
                 <Type>3</Type>
                 <BundlingType>InGameEXE</BundlingType>
@@ -6282,24 +6291,24 @@ stop
     </AudioClips>
     <AudioClipTypes>
       <AudioClipType>
-        <Name xml:space="preserve">Ambient Sound</Name>
         <TypeID>1</TypeID>
+        <Name xml:space="preserve">Ambient Sound</Name>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <Name>Music</Name>
         <TypeID>2</TypeID>
+        <Name>Music</Name>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>30</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <Name>Sound</Name>
         <TypeID>3</TypeID>
+        <Name>Sound</Name>
         <MaxChannels>0</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
