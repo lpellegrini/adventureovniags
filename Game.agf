@@ -762,6 +762,10 @@
             <Number>4</Number>
             <Description IsNull="True" />
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>5</Number>
+            <Description IsNull="True" />
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
