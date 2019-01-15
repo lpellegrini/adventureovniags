@@ -748,23 +748,35 @@
         <UnloadedRooms>
           <UnloadedRoom>
             <Number>1</Number>
-            <Description />
+            <Description xml:space="preserve">Calle 1</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>2</Number>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Calle 2</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>3</Number>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">Cesar Po</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>4</Number>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">El Cabeza Dura</Description>
           </UnloadedRoom>
           <UnloadedRoom>
             <Number>5</Number>
-            <Description IsNull="True" />
+            <Description>Callejón</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>6</Number>
+            <Description>PB</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>7</Number>
+            <Description xml:space="preserve">Primer Piso</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>8</Number>
+            <Description xml:space="preserve">Segundo Piso</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -6226,8 +6238,8 @@ stop
             <SubFolders />
             <AudioClips>
               <AudioClip>
-                <SourceFileName>C:\Users\Pelle\Downloads\rvalkyri.mid</SourceFileName>
                 <ScriptName>aWagner</ScriptName>
+                <SourceFileName>C:\Users\Pelle\Downloads\rvalkyri.mid</SourceFileName>
                 <Index>3</Index>
                 <Type>2</Type>
                 <BundlingType>InSeparateVOX</BundlingType>
@@ -6250,8 +6262,8 @@ stop
             <SubFolders />
             <AudioClips>
               <AudioClip>
-                <SourceFileName>C:\Users\Pelle\Desktop\Aventura\Audio\SFX\abrirpuerta.ogg</SourceFileName>
                 <ScriptName>aAbrirpuerta</ScriptName>
+                <SourceFileName>C:\Users\Pelle\Desktop\Aventura\Audio\SFX\abrirpuerta.ogg</SourceFileName>
                 <Index>1</Index>
                 <Type>3</Type>
                 <BundlingType>InGameEXE</BundlingType>
@@ -6262,8 +6274,8 @@ stop
                 <FileLastModifiedDate>2018-10-11 17:54:47Z</FileLastModifiedDate>
               </AudioClip>
               <AudioClip>
-                <SourceFileName>C:\Users\Pelle\Desktop\Aventura\Audio\SFX\cerrarpuerta.ogg</SourceFileName>
                 <ScriptName>aCerrarpuerta</ScriptName>
+                <SourceFileName>C:\Users\Pelle\Desktop\Aventura\Audio\SFX\cerrarpuerta.ogg</SourceFileName>
                 <Index>2</Index>
                 <Type>3</Type>
                 <BundlingType>InGameEXE</BundlingType>
@@ -6295,24 +6307,24 @@ stop
     </AudioClips>
     <AudioClipTypes>
       <AudioClipType>
-        <TypeID>1</TypeID>
         <Name xml:space="preserve">Ambient Sound</Name>
+        <TypeID>1</TypeID>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <TypeID>2</TypeID>
         <Name>Music</Name>
+        <TypeID>2</TypeID>
         <MaxChannels>1</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>30</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
         <BackwardsCompatibilityType>True</BackwardsCompatibilityType>
       </AudioClipType>
       <AudioClipType>
-        <TypeID>3</TypeID>
         <Name>Sound</Name>
+        <TypeID>3</TypeID>
         <MaxChannels>0</MaxChannels>
         <VolumeReductionWhileSpeechPlaying>0</VolumeReductionWhileSpeechPlaying>
         <CrossfadeClips>No</CrossfadeClips>
